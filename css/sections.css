@@ -543,6 +543,11 @@
 .footer-column a:hover { color: var(--color-white); }
 .footer-bottom { border-top: 1px solid rgba(191, 199, 209, 0.3); display: grid; gap: 0.75rem; margin-top: 3rem; padding-top: 1.25rem; }
 .footer-bottom p { color: var(--color-silver); font-size: 0.7rem; margin: 0; }
+.simple-page { background: var(--color-cool-gray); min-height: 100vh; }
+.simple-content { max-width: 52rem; padding-bottom: 6rem; padding-top: 5rem; }
+.simple-content h1 { margin-bottom: 1.5rem; }
+.simple-content h2 { font-family: var(--font-body); font-size: 1.25rem; font-weight: 700; margin-top: 2.5rem; }
+.simple-content p { color: #536274; }
 
 @media (min-width: 56.25rem) {
   .menu-toggle {
@@ -557,6 +562,10 @@
     gap: 1.25rem;
     padding: 0;
     position: static;
+  }
+
+  .site-nav.is-open {
+    display: flex;
   }
 
   .site-nav a:not(.button) {

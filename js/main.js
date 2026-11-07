@@ -68,16 +68,22 @@ if (form && formStatus && formSubmit) {
       form.querySelector('[aria-invalid="true"]')?.focus();
       return;
     }
-    if (form.action.includes("REPLACE_WITH_FORM_SERVICE_URL")) {
+    if (FORM_ENDPOINT.includes("REPLACE_WITH_FORM_SERVICE_URL")) {
       formStatus.textContent = "This form is not connected yet. Please contact us by email or phone below.";
       return;
     }
     if (form.website.value) return;
     formSubmit.disabled = true;
     formSubmit.textContent = "Sending…";
+    form.action = FORM_ENDPOINT;
     form.submit();
   });
 }
 
 const currentYear = document.querySelector("#current-year");
 if (currentYear) currentYear.textContent = String(new Date().getFullYear());
+
+document.querySelectorAll("[data-contact]").forEach((item) => {
+  const key = item.getAttribute("data-contact");
+  if (MARVELL_CONTACT[key]) item.textContent = MARVELL_CONTACT[key];
+});

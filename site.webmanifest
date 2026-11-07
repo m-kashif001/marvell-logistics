@@ -1,0 +1,11 @@
+{
+  "name": "Marvell Logistics",
+  "short_name": "Marvell Logistics",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0B1628",
+  "theme_color": "#0B1628",
+  "icons": [
+    {"src": "assets/favicon/favicon.svg", "sizes": "any", "type": "image/svg+xml"}
+  ]
+}

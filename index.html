@@ -6,10 +6,27 @@
     <meta name="theme-color" content="#0B1628">
     <title>Marvell Logistics | Carrier-Focused Dispatch Support</title>
     <meta name="description" content="Professional dispatch support for independent owner-operators and small carriers in the United States.">
+    <link rel="canonical" href="https://YOUR-DOMAIN.example/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Marvell Logistics | Carrier-Focused Dispatch Support">
+    <meta property="og:description" content="Professional dispatch support for independent owner-operators and small carriers in the United States.">
+    <meta property="og:url" content="https://YOUR-DOMAIN.example/">
+    <meta property="og:image" content="https://YOUR-DOMAIN.example/assets/img/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Marvell Logistics | Carrier-Focused Dispatch Support">
+    <meta name="twitter:description" content="Professional dispatch support for independent owner-operators and small carriers in the United States.">
+    <meta name="twitter:image" content="https://YOUR-DOMAIN.example/assets/img/og-image.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
     <link rel="stylesheet" href="css/tokens.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/sections.css">
+    <script defer src="js/config.js"></script>
     <script defer src="js/main.js"></script>
   </head>
   <body>
@@ -161,8 +178,7 @@
             <article class="equipment-card reveal">
               <div class="equipment-photo box-truck-photo">
                 <picture>
-                  <source srcset="assets/img/box-truck.webp" type="image/webp">
-                  <img src="assets/img/box-truck.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Placeholder for an American-style box truck at a freight setting">
+                  <img src="assets/img/box-truck.svg" width="1200" height="800" loading="lazy" decoding="async" alt="Placeholder for an American-style box truck at a freight setting">
                 </picture>
               </div>
               <div class="equipment-content"><p class="eyebrow">Current service</p><h3>Box Trucks</h3><ul><li>Appointment-heavy delivery considerations</li><li>Local and regional operating preferences</li><li>Clear pickup and delivery information</li><li>Dispatch support aligned to your equipment</li></ul></div>
@@ -170,8 +186,7 @@
             <article class="equipment-card reveal">
               <div class="equipment-photo hotshot-truck-photo">
                 <picture>
-                  <source srcset="assets/img/hotshot-truck.webp" type="image/webp">
-                  <img src="assets/img/hotshot-truck.jpg" width="1200" height="800" loading="lazy" decoding="async" alt="Placeholder for an American-style hotshot pickup with gooseneck trailer">
+                  <img src="assets/img/hotshot-truck.svg" width="1200" height="800" loading="lazy" decoding="async" alt="Placeholder for an American-style hotshot pickup with gooseneck trailer">
                 </picture>
               </div>
               <div class="equipment-content"><p class="eyebrow">Current service</p><h3>Hotshot Trucks</h3><ul><li>Time-sensitive and expedited freight considerations</li><li>Flexible trailer and equipment preferences</li><li>Route and timing review</li><li>Carrier-led load decisions</li></ul></div>
@@ -246,7 +261,7 @@
       <section class="contact section" id="contact">
         <div class="container contact-grid">
           <div class="section-heading reveal"><p class="eyebrow">Contact Marvell Logistics</p><h2>Start the conversation.</h2><p>Have a question before completing the form? Use the official contact details below once they are added.</p></div>
-          <div class="contact-details reveal"><div class="contact-detail"><span>Email</span><strong>[ADD OFFICIAL EMAIL LATER]</strong></div><div class="contact-detail"><span>Phone</span><strong>[ADD PHONE NUMBER LATER]</strong></div><div class="contact-detail"><span>WhatsApp</span><strong>[ADD WHATSAPP NUMBER LATER]</strong></div><div class="contact-detail"><span>Address</span><strong>[ADD ONLY IF APPROPRIATE]</strong></div><a class="button button-primary" href="index.html#partner">Start the Conversation <span aria-hidden="true">↑</span></a></div>
+          <div class="contact-details reveal"><div class="contact-detail"><span>Email</span><strong data-contact="email">[ADD OFFICIAL EMAIL LATER]</strong></div><div class="contact-detail"><span>Phone</span><strong data-contact="phone">[ADD PHONE NUMBER LATER]</strong></div><div class="contact-detail"><span>WhatsApp</span><strong data-contact="whatsapp">[ADD WHATSAPP NUMBER LATER]</strong></div><div class="contact-detail"><span>Address</span><strong data-contact="address">[ADD ONLY IF APPROPRIATE]</strong></div><a class="button button-primary" href="index.html#partner">Start the Conversation <span aria-hidden="true">↑</span></a></div>
         </div>
       </section>
     </main>
@@ -256,10 +271,13 @@
         <div class="footer-brand"><a class="wordmark wordmark-light" href="index.html#home" aria-label="Marvell Logistics home"><svg class="wordmark-mark" viewBox="0 0 42 42" aria-hidden="true"><path d="M7 31 16 11l8 13 5-9 6 16M7 35h28" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg><span><strong>MARVELL</strong><small>LOGISTICS</small></span></a><p>Carrier-focused dispatch support for independent owner-operators and small carriers.</p></div>
         <div class="footer-column"><h3>Explore</h3><a href="index.html#about">About</a><a href="index.html#services">Services</a><a href="index.html#equipment">Equipment</a><a href="index.html#process">How it works</a></div>
         <div class="footer-column"><h3>Support</h3><a href="index.html#partner">Partner with us</a><a href="index.html#faq">FAQ</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a></div>
-        <div class="footer-column"><h3>Contact</h3><span>[ADD OFFICIAL EMAIL LATER]</span><span>[ADD PHONE NUMBER LATER]</span><span>[ADD WHATSAPP NUMBER LATER]</span></div>
+        <div class="footer-column"><h3>Contact</h3><span data-contact="email">[ADD OFFICIAL EMAIL LATER]</span><span data-contact="phone">[ADD PHONE NUMBER LATER]</span><span data-contact="whatsapp">[ADD WHATSAPP NUMBER LATER]</span></div>
       </div>
       <div class="container footer-bottom"><p>Marvell Logistics provides dispatch support services to motor carriers. It is not a freight broker or motor carrier. Service scope and terms are confirmed in a written agreement.</p><p>© <span id="current-year">2026</span> Marvell Logistics. All rights reserved.</p></div>
     </footer>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"ProfessionalService","name":"Marvell Logistics","url":"https://YOUR-DOMAIN.example/"}
+    </script>
     <script type="application/ld+json">
       {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
         {"@type":"Question","name":"What does a truck dispatch service do?","acceptedAnswer":{"@type":"Answer","text":"A truck dispatch service supports a motor carrier with tasks such as identifying freight opportunities, communicating with brokers on the carrier's behalf, reviewing load information and coordinating agreed dispatch details."}},

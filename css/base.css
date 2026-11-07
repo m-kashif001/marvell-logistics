@@ -125,6 +125,13 @@ h3 {
   color: #536274;
 }
 
+@media (min-width: 56.25rem) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
 @media (min-width: 37.5rem) {
   .container {
     padding-left: 2rem;

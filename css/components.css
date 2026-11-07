@@ -1,0 +1,124 @@
+/* Reusable buttons, cards, forms, and other shared pieces. */
+.button {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  gap: 0.75rem;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  transition: background-color var(--transition), border-color var(--transition), color var(--transition), transform var(--transition);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button-primary {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.button-primary:hover {
+  background: var(--color-blue-dark);
+}
+
+.button-secondary {
+  background: var(--color-white);
+  border-color: var(--color-silver);
+  color: var(--color-navy);
+}
+
+.button-secondary:hover {
+  border-color: var(--color-blue);
+  color: var(--color-blue-dark);
+}
+
+.button-ghost {
+  background: transparent;
+  color: var(--color-white);
+}
+
+.button-ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  padding: var(--space-4);
+}
+
+.icon {
+  color: var(--color-blue-dark);
+  height: 2rem;
+  width: 2rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.field label {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.field input,
+.field select,
+.field textarea {
+  background: var(--color-white);
+  border: 1px solid var(--color-silver);
+  border-radius: var(--radius-sm);
+  min-height: 2.75rem;
+  padding: 0.7rem 0.8rem;
+  width: 100%;
+}
+
+.field textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.field [aria-invalid="true"] {
+  border-color: #9c2c2c;
+}
+
+.field-error {
+  color: #9c2c2c;
+  font-size: 0.8125rem;
+  min-height: 1.2em;
+}
+
+.notice {
+  border-left: 3px solid var(--color-blue);
+  color: #536274;
+  font-size: 0.875rem;
+  padding-left: var(--space-2);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
